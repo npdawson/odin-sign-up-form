@@ -3,12 +3,16 @@
 	src: url(resources/Norse-Bold.otf);
 }
 
+:root {
+	--sidebar-split: 400px;
+}
+
 #sidebar {
 	margin: 0;
 	padding: 0;
 	position: fixed;
 	height: 100%;
-	width: 450px;
+	width: var(--sidebar-split);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -26,34 +30,35 @@
 	left: 0px;
 	height: 100%;
 	object-fit: cover;
-	max-width: 450px;
+	max-width: var(--sidebar-split);
 	z-index: -1;
 }
 
 #photo-credit {
 	position: absolute;
 	bottom: 10px;
+	font-size: 10px;
 }
 
 #odin-logo {
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.45);
 	font-family: NorseBold;
-	font-size: 100px;
+	font-size: 75px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-top: 25vh;
-	padding-top: 16px;
-	padding-bottom: 16px;
+	margin-top: 20vh;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	width: 100%;
 }
 
 #sign-up {
-	margin-left: 450px;
+	margin-left: var(--sidebar-split);
 	display: flex;
 	align-items: center;
 	height: 100%;
-	background: lightgray;
+	background: ghostwhite;
 }
 
 #sign-up-form {
@@ -61,10 +66,11 @@
 	height: 30vh;
 	width: 100%;
 	padding-left: 24px;
+	box-shadow: 0px 3px 6px lightgray;
 }
 
 #sign-up-form p {
-	font-size: 20px;
+	font-size: 18px;
 	margin-top: 8px;
 	margin-bottom: 0px;
 	margin-left: 16px;
@@ -85,11 +91,12 @@
 }
 
 label {
-	font-size: 12px;
+	font-size: 10px;
 }
 
 body {
 	margin: 0;
 	padding: 0;
 	height: 100vh;
+	font-family: sans-serif;
 }
