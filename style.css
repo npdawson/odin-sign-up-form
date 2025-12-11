@@ -115,8 +115,21 @@ label {
 	font-variant: all-small-caps;
 }
 
+input {
+	border: 1px solid #E5E7EB;
+}
+
+input:focus {
+	border: 1px solid blue;
+	box-shadow: 2px 2px lightgray;
+}
+
+input:invalid {
+	border: 1px solid red;
+}
+
 button {
-	background-color: darkolivegreen;
+	background-color: #596D48;
 	padding-top: .75em;
 	padding-bottom: .75em;
 	padding-left: 3em;
