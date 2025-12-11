@@ -20,27 +20,41 @@
 				on <a href="https://unsplash.com/">Unsplash</a></div>
 		</div>
 		<div id="sign-up">
-			<form id="sign-up-form">
+			<div id="realize">
+				<p>This is not a real online service! You know you need something
+					like this in your life to help you realize your deepest dreams.
+					<br />
+					Sign up <i>now</i> to get started.
+				</p>
+				<p>You <i>know</i> you want to.</p>
+			</div>
+			<div id="sign-up-form">
 				<p>Let's do this!</p>
-				<div id="form">
+				<form id="form">
 					<div class="form-col">
 						<label for="first-name">FIRST NAME</label>
-						<input id="first-name" />
+						<input tabindex="1" id="first-name" required />
 						<label for="email">EMAIL</label>
-						<input id="email" type=email />
+						<input tabindex="3" id="email" type=email required />
 						<label for="password">PASSWORD</label>
-						<input id="password" type=password />
+						<input tabindex="5" id="password" type=password required />
 					</div>
 					<div class="form-col">
 						<label for="last-name">LAST NAME</label>
-						<input id="last-name" />
+						<input tabindex="2" id="last-name" required />
 						<label for="phone-number">PHONE NUMBER</label>
-						<input id="phone-number" />
+						<input tabindex="4" id="phone-number" required />
 						<label for="confirm-password">CONFIRM PASSWORD</label>
-						<input id="confirm-password" type=password />
+						<input tabindex="6" id="confirm-password" type=password required />
 					</div>
-				</div>
-			</form>
+				</form>
+			</div>
+			<div id="button-area">
+				<button tabindex="7" type="submit" form="form">Create Account</button>
+				<p>Already have an account?
+					<a href="" tabindex="8">Log in</a>
+				</p>
+			</div>
 		</div>
 	</body>
 </html>

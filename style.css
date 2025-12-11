@@ -56,9 +56,18 @@
 #sign-up {
 	margin-left: var(--sidebar-split);
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	height: 100%;
 	background: ghostwhite;
+}
+
+#realize {
+	padding-top: 14vh;
+	padding-left: 2em;
+	padding-right: 6em;
+	padding-bottom: 2em;
+	font-weight: bold;
 }
 
 #sign-up-form {
@@ -84,14 +93,39 @@
 	display: flex;
 	flex-direction: column;
 	padding: 1em;
+	padding-right: 2em;
 }
 
 .form-col input {
 	margin-bottom: 1em;
 }
 
+#button-area {
+	width: 100%;
+	padding-top: 2em;
+	padding-left: 4em;
+}
+
+#button-area p {
+	font-size: 12px;
+}
+
 label {
-	font-size: 10px;
+	font-size: 12px;
+	font-variant: all-small-caps;
+}
+
+button {
+	background-color: darkolivegreen;
+	padding-top: .75em;
+	padding-bottom: .75em;
+	padding-left: 3em;
+	padding-right: 3em;
+	margin-bottom: .5em;
+	color: white;
+	font-weight: bold;
+	border: none;
+	border-radius: 6px;
 }
 
 body {
